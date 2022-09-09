@@ -1,0 +1,60 @@
+@import './base.scss';
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: $dark;
+    overflow: hidden;
+
+    .header {
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &__wrap {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 60vw;
+        }
+
+        &__left {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            & li {
+                font-size: 1.125rem;
+                font-weight: 700;
+                color: $light;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            &__wrap {
+                width: 100vw;
+            }
+        }
+
+        @media (max-width: 650px) {
+            &__sm {
+                display: none;
+            }
+        }
+
+        @media (max-width: 370px) {
+            & {
+                left: 36%;
+            }
+            &__wrap {
+                gap: 20%;
+            }
+            .coolLink[data-text="FAQ"] {
+                display: none;
+            }
+        }
+    }
+}
