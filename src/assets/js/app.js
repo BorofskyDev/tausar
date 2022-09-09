@@ -42,9 +42,10 @@ let barInterval = setInterval(() => {
             opacity: .5,
         })
         gsap.to('.loading__img', {
-            delay: 2,
-            duration: 100,
+            delay: 10,
+            // duration: 100,
             rotate: '360deg',
+            display: 'none',
         })
     }
 

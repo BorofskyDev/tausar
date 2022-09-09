@@ -121,3 +121,39 @@
         }
     }
 }
+
+/******************/
+/****COOL ICONS****/
+/******************/
+
+.coolIcon {
+    color: $light;
+    font-size: 2.12rem;
+
+    &:hover,
+    &:focus {
+        animation: coloredIconAnimation .3s infinite;
+        color: $light
+    }
+        @keyframes coloredIconAnimation {
+            0% {
+                text-shadow: 5px 4px $secondary, -5px -6px $primary;
+            }
+    
+            25% {
+                text-shadow: -5px -6px $secondary, 5px 4px $primary;
+            }
+    
+            50% {
+                text-shadow: 5px -4px $secondary, -8px 4px $primary;
+            }
+    
+            75% {
+                text-shadow: -8px -4px $secondary, -5px -4px $primary;
+            }
+    
+            100% {
+                text-shadow: -5px 0 $secondary, 5px -4px $primary;
+            }
+        }
+}
