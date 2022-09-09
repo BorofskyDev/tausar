@@ -6,10 +6,10 @@
     height: 100vh;
     background: $dark;
     overflow: hidden;
-    background-image: url('../images/backgrounds/uaBackground7.jpg');
+    background-image: url('../images/backgrounds/uaBackground11.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left;
 
     .header {
         position: absolute;
@@ -70,15 +70,29 @@
         left: 1rem;
         width: 100%;
         height: 60%;
+        background-image: $gradient-text-primary;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-size: 300%;
+        background-position: -100%;
+        animation: movingText 5s infinite alternate-reverse;
         z-index: 2;
-        color: $secondary;
+        @keyframes movingText {
+            from {
+                background-position: 0%;
+            }
+            to {
+                background-position: 100%;
+            }
+        }
 
         & h4 {
             font-size: 1.6rem;
         }
 
         & span {
-            background-image: $gradient-text;
+            background-image: $gradient-text-logo;
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -155,7 +169,7 @@
         height: 42px;
         width: 24px;
         border-radius: 10px;
-        border: 2px solid $primary;
+        border: 3px solid $light-primary;
 
         &--inner {
             position: absolute;
@@ -163,7 +177,7 @@
             margin-top: 5px;
             width: 4px;
             height: 4px;
-            background: $primary;
+            background: $dark-secondary;
             border-radius: 50%;
             animation: movingwheel 0.5s linear infinite;
 
@@ -200,8 +214,8 @@
         .scrollDown__arrow {
             width: 15px;
             height: 15px;
-            border-right: 2px solid $primary;
-            border-bottom: 2px solid $primary;
+            border-right: 3px solid $light-primary;
+            border-bottom: 3px solid $dark-secondary;
             transform: rotate(45deg);
             animation: scrollAnim 1s infinite;
             animation-direction: alternate;

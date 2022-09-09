@@ -102,7 +102,7 @@
         content: '';
         height: 85%;
         width: 95%;
-        border: 1px solid $primary;
+        border: 1px solid $light-primary;
         border-radius: 58% 42% 55% 45% / 56% 45% 55% 44%;
         transform: rotate(-20deg);
         transition: transform 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55);
@@ -110,7 +110,7 @@
 
     &:hover:after,
     &:focus:after {
-        border: 1px solid $secondary;
+        border: 1px solid $dark-secondary;
         transform: translate3d(0, -5px, 0);
     }
 
