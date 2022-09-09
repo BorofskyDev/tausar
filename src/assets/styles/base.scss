@@ -97,6 +97,11 @@ $dark: #000005;
 $dark-primary: #04008F;
 $dark-secondary: #FF6A00;
 
+$darker-primary: #010024FF;
+
+$box-shadow-yellow: rgba(255, 234, 0, 0.671);
+$box-shadow-blue: rgba(0, 77, 255, 0.671);
+
 $gradient-text-logo: linear-gradient(90deg,
     $light-primary,
     $dark,
@@ -112,4 +117,19 @@ $gradient-text-primary: linear-gradient(90deg,
     $light-primary,
     $light,
     $secondary,
-    $dark-secondary )
+    $dark-secondary );
+
+
+  /******************/
+  /****CLASSES*******/
+  /******************/
+
+.section {
+  padding: 1rem;
+  overflow: hidden;
+  min-height: 100vh;
+  padding-top: 5rem;
+  @media (min-width: 650px) {
+    padding: 5rem;
+  }
+}

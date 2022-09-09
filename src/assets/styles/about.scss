@@ -1,0 +1,57 @@
+@import './base.scss';
+
+.about {
+    position: relative;
+    background: $dark;
+    color: $light;
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .team {
+            position: relative;
+            background: $darker-primary;
+            box-shadow: 0 8px 32px $box-shadow-yellow, 2px 20px 72px $box-shadow-blue;
+            &__curve {
+                position: absolute;
+                top: -10px;
+                left: 20px;
+                width: 30%;
+                height: 120%;
+                border-left: 2px solid $primary;
+                border-radius: 50%;
+                transform: rotate(-20deg);
+                box-shadow: 0 8px 32px 0 $box-shadow-yellow;
+
+            }
+            &__infos {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                font-size: 1rem;
+                padding-inline: 0.8rem;
+            }
+            &__img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border-right: 2px solid $secondary
+            }
+            &__col {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            &__info {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                & img {
+                    width: 20px;
+                    height: 20px;
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
