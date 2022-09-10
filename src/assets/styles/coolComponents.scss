@@ -95,7 +95,7 @@
     & span {
         mix-blend-mode: difference;
         font-weight: 700;
-        font-size: 1.2rem;
+        font-size: $fs-600;
     }
 
     &:after {
@@ -117,7 +117,7 @@
     @media (max-width: 800px) {
         & {
             transform: scale3d(0.7, 0.7, 0.7);
-            font-size: 1.44rem;
+            font-size: $fs-600;
         }
     }
 }
@@ -127,8 +127,8 @@
 /******************/
 
 .coolIcon {
-    color: $light;
-    font-size: 2.12rem;
+    color: $primary;
+    font-size: $fs-800;
 
     &:hover,
     &:focus {
@@ -138,23 +138,23 @@
 
     @keyframes coloredIconAnimation {
         0% {
-            text-shadow: 5px 4px $secondary, -5px -6px $primary;
+            text-shadow: 5px 4px $dark-secondary, -5px -6px $light-primary;
         }
 
         25% {
-            text-shadow: -5px -6px $secondary, 5px 4px $primary;
+            text-shadow: -5px -6px $dark-secondary, 5px 4px $light-primary;
         }
 
         50% {
-            text-shadow: 5px -4px $secondary, -8px 4px $primary;
+            text-shadow: 5px -4px $dark-secondary, -8px 4px $light-primary;
         }
 
         75% {
-            text-shadow: -8px -4px $secondary, -5px -4px $primary;
+            text-shadow: -8px -4px $dark-secondary, -5px -4px $light-primary;
         }
 
         100% {
-            text-shadow: -5px 0 $secondary, 5px -4px $primary;
+            text-shadow: -5px 0 $dark-secondary, 5px -4px $light-primary;
         }
     }
 }

@@ -5,7 +5,6 @@
 /******ACCESS******/
 /******************/
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {
@@ -15,6 +14,21 @@
     scroll-behavior: auto !important;
   }
 }
+
+.skip-to-content {
+    position: absolute;
+    z-index: 9999;
+    background: hsl(var(--clr-white));
+    color: hsl(var(--clr-dark));
+    padding: .5em 1em;
+    margin-inline: auto;
+    transform: translateY(-100%);
+    transition: transform 250ms ease-in;
+    &:focus {
+        transform: translateY(0);
+    }
+}
+
 
 /******************/
 /****CSS RESET*****/
@@ -40,7 +54,7 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  height: 100vh
+  height: 100vh;
 }
 
 button,
@@ -88,38 +102,67 @@ ul {
 /******************/
 /****VARIABLES*****/
 /******************/
-$primary: #004DFF;
+
+// preset colors
+$primary: #004dff;
 $secondary: #ffea00;
 
 $light: #f7f7ff;
-$light-primary: #00CCFF;
+$light-primary: #00ccff;
 
 $dark: #000005;
-$dark-primary: #04008F;
-$dark-secondary: #FF6A00;
+$dark-primary: #04008f;
+$dark-secondary: #ff6a00;
 
-$darker-primary: #010024FF;
+$darker-primary: #010024ff;
 
 $box-shadow-yellow: rgba(255, 234, 0, 0.671);
 $box-shadow-blue: rgba(0, 77, 255, 0.671);
 
-$gradient-text-logo: linear-gradient(90deg,
-    $light-primary,
-    $dark,
-    $primary,
-    $secondary,
-    $light,
-    $dark-secondary);
+// Text sizes
 
-$gradient-text-primary: linear-gradient(90deg,
-    $dark,
-    $dark-primary,
-    $primary,
-    $light-primary,
-    $light,
-    $secondary,
-    $dark-secondary );
+$fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+$fs-800: 3.5rem;
+$fs-700: 2rem;
+$fs-600: 1.5rem;
+$fs-500: 1rem;
+$fs-400: 0.9375rem;
+$fs-300: 1rem;
+$fs-200: 0.875rem;
 
+@media (min-width: 35em) {
+  $fs-800: 5rem;
+  $fs-700: 2.5rem;
+  $fs-600: 1.5rem;
+  $fs-500: 1.25rem;
+  $fs-400: 1rem;
+}
+
+@media (min-width: 45em) {
+  $fs-800: 6.25rem;
+  $fs-700: 3.5rem;
+  $fs-600: 2rem;
+  $fs-500: 1.75rem;
+  $fs-400: 1.125rem;
+}
+
+$gradient-text-logo: linear-gradient(
+  90deg,
+  $light-primary,
+  $dark,
+  $primary,
+  $secondary,
+  $light,
+  $dark-secondary
+);
+
+$gradient-text-primary: linear-gradient(
+  160deg,
+  $dark-primary,
+  $primary,
+  $secondary,
+  $dark-secondary,
+);
 
 /******************/
 /****CLASSES*******/
