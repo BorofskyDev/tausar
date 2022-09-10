@@ -14,7 +14,7 @@
 
   .header {
     position: absolute;
-    top: 1rem;
+    top: -100%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -68,7 +68,7 @@
   .intro {
     position: absolute;
     top: 20%;
-    left: 1rem;
+    left: -100%;
     width: 100%;
     height: 60%;
     color: $light;
@@ -136,7 +136,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 10rem;
+    bottom: -100%;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -146,7 +146,7 @@
 
 .scrollDown {
   position: absolute;
-  bottom: 3rem;
+  bottom: -100%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -237,5 +237,5 @@
 
 .landing canvas {
   position: absolute;
-  z-index: 1;
+  // z-index: 1;
 }
