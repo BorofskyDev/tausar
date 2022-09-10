@@ -28,6 +28,10 @@ import b20 from '../images/backgrounds/uaBackground20.jpg';
 import b21 from '../images/backgrounds/uaBackground21.jpg';
 import b22 from '../images/backgrounds/uaBackground22.webp';
 import b23 from '../images/backgrounds/uaBackground23.jpg';
+import tausar1 from '../images/scroll/tausar1.jpg'
+import tausar2 from '../images/scroll/tausar2.jpg'
+import tausar3 from '../images/scroll/tausar3.jpg'
+import tausar4 from '../images/scroll/tausar4.jpg'
 
 const images = {
   david,
@@ -59,7 +63,11 @@ const images = {
   b20,
   b21,
   b22,
-  b23
+  b23,
+  tausar1,
+  tausar2,
+  tausar3,
+  tausar4
 };
 
 export default images;

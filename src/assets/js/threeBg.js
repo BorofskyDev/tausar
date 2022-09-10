@@ -44,7 +44,7 @@ function animate() {
         const x = geometry.attributes.position.getX(i)
         const y = geometry.attributes.position.getY(i)
         // animations
-        const anim1 = .75 * Math.sin(y * 4 + time * 0.5)
+        const anim1 = .75 * Math.sin(y * 2 + time * 0.5)
         const anim2 = .5 * Math.sin(x + time * .9)
         const anim3 = .1 * Math.sin(y * 15 + time * .9)
 
