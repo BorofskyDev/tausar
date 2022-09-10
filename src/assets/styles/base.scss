@@ -165,30 +165,4 @@ $gradient-text-primary: linear-gradient(
   $dark-secondary,
 );
 
-/******************/
-/****CLASSES*******/
-/******************/
 
-.section {
-  padding: 1rem;
-  overflow: hidden;
-  min-height: 100%;
-  padding-top: 5rem;
-
-  @media (min-width: 650px) {
-    padding: 5rem;
-  }
-
-  &__header {
-    &--title {
-      font-weight: 400;
-      font-size: 17px;
-      color: $secondary;
-    }
-
-    &--subtitle {
-      font-size: 27px;
-      font-weight: 700;
-    }
-  }
-}
