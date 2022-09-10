@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html --open",
-    "build": "parcel build --no-minify src/index.html"
+    "build": "parcel build --no-minify src/index.html",
+    "deploy": "vercel --prod"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
     "imagesloaded": "^5.0.0",
     "smooth-scrollbar": "^8.7.5",
     "swiper": "^8.3.2",
-    "three": "^0.144.0"
+    "three": "^0.144.0",
+    "vercel": "^28.2.4"
   }
 }
